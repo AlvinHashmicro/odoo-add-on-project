@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_warung_partner,access.warung.partner,model_warung_partner,,1,1,1,1
+access_warung_boardgame,access.warung.boardgame,model_warung_boardgame,,1,1,1,1
+access_warung_makanan,access.warung.makanan,model_warung_makanan,,1,1,1,1
+access_warung_minuman,access.warung.minuman,model_warung_minuman,,1,1,1,1

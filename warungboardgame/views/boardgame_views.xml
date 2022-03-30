@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- warung.boardgame tree view -->
+    <record id="warung_boardgame_view_tree" model="ir.ui.view">
+        <field name="name">Daftar Boardgame</field>
+        <field name="model">warung.boardgame</field>
+        <field name="arch" type="xml">
+            <tree>
+                <!-- Add your fields here -->
+                <field name="name"/>
+                <field name="type"/>
+                <field name="price"/>
+                <field name="rent"/>
+            </tree>
+        </field>
+    </record>
+    <!-- warung.boardgame action window -->
+    <record id="warung_boardgame_action" model="ir.actions.act_window">
+        <field name="name">Daftar Boardgame</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">warung.boardgame</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem
+        id="warung_boardgame_boardgame_menu_act"
+        name="Koleksi Boardgame"
+        parent="warung_boardgame_menu_categ"
+        action="warung_boardgame_action"
+        sequence="10"/>
+
+</odoo>

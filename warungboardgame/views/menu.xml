@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem
+        id="warung_menu_root"
+        name="Warung Boardgame"
+        sequence="10"
+    />
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem
+        id="warung_boardgame_menu_categ"
+        name="Boardgame"
+        parent="warung_menu_root"
+        sequence="10"
+    />
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="warung_fnb_menu_categ"
+        name="Food and Beverages"
+        parent="warung_menu_root"
+        sequence="10"
+    />
+
+</odoo>
